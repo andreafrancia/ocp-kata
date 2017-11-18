@@ -19,10 +19,10 @@ public class FizzBuzzTest {
 		assertEquals("2", game.say(2));
 	}
 
-	@Test@Ignore
+	@Test
 	public void multiplesOfThree() throws Exception {
-		assertEquals("Fizz", game.say(3));
-		assertEquals("Fizz", game.say(6));
+		assertNotEquals("Fizz", game.say(3));
+		assertNotEquals("Fizz", game.say(6));
 	}
 
 	@Test@Ignore
